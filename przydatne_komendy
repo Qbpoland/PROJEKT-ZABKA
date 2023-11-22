@@ -1,0 +1,15 @@
+composer require slim/slim "^3.0"
+composer require zircote/swagger-php
+php -S localhost:8080
+
+
+Do testowania api:
+
+Pobierz wszystkie sklepy:
+GET http://localhost:8080/sklepy
+Wyszukaj sklep po id:
+GET http://localhost:8080/sklepy/1
+Wyszukaj sklepy po ilości pracowników: (dla ilości pracowników równej 5)
+GET http://localhost:8080/sklepy/pracownicy5
+Wyszukaj sklepy po id dzielnicy:(dla id dzielnicy 2)
+GET http://localhost:8080/sklepy/dzielnica2
